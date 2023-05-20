@@ -11,5 +11,5 @@ EXPOSE 8086
 
 ADD ./yami-shop-api/target/yami-shop-api-0.0.1-SNAPSHOT.jar ./
 
-CMD java -jar -Xms128m -Xmx128m -Xmn64m -Xss256k -XX:SurvivorRatio=8 -XX:+UseG1GC -Dspring.profiles.active=docker yami-shop-api-0.0.1-SNAPSHOT.jar
+CMD java -jar -Xms256m -Xmx256m -Xmn128m -Xss256k -XX:SurvivorRatio=8 -XX:+UseG1GC -Dspring.profiles.active=docker yami-shop-api-0.0.1-SNAPSHOT.jar
 
