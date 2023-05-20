@@ -9,7 +9,7 @@ services:
     restart: always
     container_name: mall4j-mysql
     image: mall4j-mysql
-    mem_limit: 128m
+    mem_limit: 256m
     ports:
       - 3306:3306
     volumes:
@@ -20,7 +20,7 @@ services:
     image: redis:5.0.4
     restart: always
     container_name: mall4j-redis
-    mem_limit: 128m
+    mem_limit: 256m
     ports:
       - 6379:6379
 
@@ -30,7 +30,7 @@ services:
       dockerfile: ./yami-shop-admin/Dockerfile
     restart: always
     container_name: mall4j-admin
-    mem_limit: 128m
+    mem_limit: 256m
     image: mall4j-admin
     ports:
       - 8085:8085
@@ -48,7 +48,7 @@ services:
     restart: always
     container_name: mall4j-api
     image: mall4j-api
-    mem_limit: 128m
+    mem_limit: 256m
     ports:
       - 8086:8086
     depends_on:
