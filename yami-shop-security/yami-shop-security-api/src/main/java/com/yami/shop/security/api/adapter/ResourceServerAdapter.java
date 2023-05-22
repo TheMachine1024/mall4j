@@ -1,6 +1,7 @@
 package com.yami.shop.security.api.adapter;
 
 import com.yami.shop.security.common.adapter.DefaultAuthConfigAdapter;
+import java.util.Arrays;
 import org.springframework.stereotype.Component;
 
 import java.util.Collections;
@@ -15,6 +16,6 @@ public class ResourceServerAdapter extends DefaultAuthConfigAdapter {
 
     @Override
     public List<String> pathPatterns() {
-        return Collections.singletonList("/p/*");
+        return Arrays.asList("/p/*","/api/p/*");
     }
 }
