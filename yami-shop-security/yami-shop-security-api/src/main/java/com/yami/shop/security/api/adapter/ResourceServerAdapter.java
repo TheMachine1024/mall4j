@@ -16,6 +16,6 @@ public class ResourceServerAdapter extends DefaultAuthConfigAdapter {
 
     @Override
     public List<String> pathPatterns() {
-        return Arrays.asList("/p/*","/api/p/*");
+        return Arrays.asList("/p/*");
     }
 }
